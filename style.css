@@ -51,10 +51,9 @@ html, body {
 
 /* ===============SIDE BAR MENU=========== */
 
-/* .sidebar {
+.sidebar {
     height: 100%;
     width: 250px;
-    max-width: 80vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,20 +61,6 @@ html, body {
     padding-top: 20px;
     transition: 0.3s;
     transform: translateX(-250px);
-    z-index: 1;
-} */
-
-.sidebar {
-    height: 100%;
-    width: 80vw; /* Use relative unit */
-    max-width: 250px; /* Maximum width */
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #29176d;
-    padding-top: 20px;
-    transition: 0.3s;
-    transform: translateX(-100%); /* Hide initially */
     z-index: 1;
 }
 
@@ -123,7 +108,6 @@ html, body {
 .main-content {
     margin-left: 250px;
     padding: 20px;
-    width: calc(100% - 250px); /* Adjust width to account for sidebar */
 }
 
 .active-sidebar {
@@ -1117,7 +1101,7 @@ footer{
     }
 }
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .wrapper .carousel {
       grid-auto-columns: 100%;
     }
@@ -1128,23 +1112,6 @@ footer{
 
     .carousel .card .img {
         width: min(15rem, 100%);
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    body{
-        min-width: 100%;
-        width: fit-content;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .main-content {
-        margin-left: 0; /* Adjust for smaller screens */
-        width: 100%;
-    }
-    .sidebar {
-        width: 60vw; /* Adjust for smaller screens */
     }
 }
 
