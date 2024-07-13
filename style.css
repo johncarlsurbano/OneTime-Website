@@ -27,7 +27,7 @@
 }
 
 
-html {
+html{
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 8rem);
 }
@@ -43,10 +43,17 @@ font-size: 1.5rem;
 background: var(--cir-primary-400);
 }
 
-body{
+/* body{
     min-width: 100%;
     width: fit-content;
     background-color: white;
+} */
+
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ===============SIDE BAR MENU=========== */
