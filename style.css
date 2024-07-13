@@ -27,7 +27,7 @@
 }
 
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 8rem);
 }
@@ -43,10 +43,10 @@ font-size: 1.5rem;
 background: var(--cir-primary-400);
 }
 
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+body{
+    min-width: 100%;
+    width: fit-content;
+    background-color: white;
 }
 
 /* ===============SIDE BAR MENU=========== */
@@ -1101,17 +1101,23 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .wrapper .carousel {
       grid-auto-columns: 100%;
     }
 
     .carousel .card {
-        padding: 0;
+        padding: 0rem;
     }
 
     .carousel .card .img {
         width: min(15rem, 100%);
     }
-}
+  }
 
+  @media screen and (max-width: 375px) {
+    body{
+        min-width: 100%;
+        width: fit-content;
+    }
+  }
