@@ -1114,3 +1114,10 @@ footer{
         width: min(15rem, 100%);
     }
   }
+
+  @media screen and (max-width: 375px) {
+    body{
+        min-width: 100%;
+        width: fit-content;
+    }
+  }
