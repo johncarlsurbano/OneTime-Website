@@ -1099,6 +1099,9 @@ footer{
     .footer-content-top{
         flex-direction: column;
     }
+    .contact-us-footer h1, .location-footer h1{
+        margin-top: 4rem;
+    }
 }
 
   @media screen and (max-width: 600px) {
