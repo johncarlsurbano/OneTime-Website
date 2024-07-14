@@ -1039,10 +1039,12 @@ footer{
         flex-direction: column;
         text-align: center;
         gap: 3rem;
+        margin: 0 auto;
     }
     .main2-content{
         flex-wrap: wrap;
         gap: 3rem;
+        margin: 0 auto;
     }
     .main2-content-text{
         align-items: center;
@@ -1080,6 +1082,7 @@ footer{
         text-align: center;
         gap: 3rem;
         padding: 2rem;
+        margin: 0 auto;
     }
 
     .main5-content-bottom-text h1{
@@ -1119,8 +1122,7 @@ footer{
   }
 
   @media screen and (max-width: 375px) {
-    body{
-        min-width: 100%;
-        width: fit-content;
+    html,body{
+        width: 100%;
     }
   }
