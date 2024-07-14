@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -99,6 +97,10 @@ body{
     display: none;
     align-items: center;
     background-color: transparent;
+}
+
+#invisible {
+    pointer-events: none;
 }
 
 .open-btn .charm--menu-hamburger {
@@ -873,23 +875,24 @@ footer{
         display: none;
     }
 
-    .navbar2-content {
-        padding: 0 4rem 0 1rem;
-    }
-
     .navbar2-content .choices, #button1{
         display: none;
     }
 
     .navbar2-content .logo {
-        margin: 0 auto;
+        height: 4rem;
     }
 
     .open-btn {
         display: block;
         color: #29176d;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         cursor: pointer;
+    }
+
+    #invisible{
+        font-size: 2.3rem;
+        color: transparent;
     }
 
     .open-btn .charm--menu-hamburger:hover {
@@ -964,33 +967,17 @@ footer{
     .navbar1{
         display: none;
     }
-}
 
-@media screen and (max-width:752px) {
-    .footer-content-top{
-        flex-direction: column;
-    }
-    .contact-us-footer h1, .location-footer h1{
-        margin-top: 4rem;
+    .footer-content-top > div {
+        flex-wrap: wrap;
+        width: 60%;
+        margin-bottom: 1.5rem;
     }
 }
 
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
-    }
-
-    .carousel .card {
-        padding: 2rem;
-    }
-
-    .carousel .card .img {
-        width: min(15rem, 100%);
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    html,body{
+@media screen and (max-width:600px) {
+    .footer-content-top > div {
         width: 100%;
+        margin-bottom: 1.5rem;
     }
-  }
+}

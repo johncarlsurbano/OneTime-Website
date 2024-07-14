@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="icon" type="image/png" href="OneTime-images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +22,13 @@
                     <div id="country">OneTime Philippines</div>
                 </div>
                 <div class="right" class="primary-navigation">
-                    <a href="#main1-id">Home</a>
-                    <a href="#main6-id">About Us</a>
+                    <a href="#Home">Home</a>
+                    <a href="#About-Us">About Us</a>
                 </div>
             </div>
         </div>
         <div class="navbar2">
             <div class="navbar2-content">
-                <!-- <span class="charm--menu-hamburger"></span> -->
-
                 <button class="open-btn" onclick="toggleSidebar()">
                     <span class="charm--menu-hamburger"></span>
                 </button>
@@ -40,13 +37,13 @@
                     <button class="close-btn" onclick="toggleSidebar()">
                         <span class="oi--x"></span>
                     </button>
-                    <a href="#main1-id" onclick="toggleSidebar()">Home</a>
+                    <a href="#Home" onclick="toggleSidebar()">Home</a>
                     <a href="https://www.facebook.com/profile.php?id=100083774568391" onclick="toggleSidebar()">Inquire Now</a>
-                    <a href="#main6-id" onclick="toggleSidebar()">About Us</a>
+                    <a href="#About-Us" onclick="toggleSidebar()">About Us</a>
                     <a href="#main3-id" onclick="toggleSidebar()">Food Cart</a>
-                    <a href="#main4-id" onclick="toggleSidebar()">Franchising</a>
-                    <a href="#main66-id" onclick="toggleSidebar()">Seminars</a>
-                    <a href="#main7-id" onclick="toggleSidebar()">Vision & Mission</a>
+                    <a href="#Franchising" onclick="toggleSidebar()">Franchising</a>
+                    <a href="#Seminars" onclick="toggleSidebar()">Seminars</a>
+                    <a href="#Vision-&-Mission" onclick="toggleSidebar()">Vision & Mission</a>
                 </div>
                 
             
@@ -55,15 +52,18 @@
                 </div>
                 <div class="choices">
                     <a href="#main3-id">Food Cart</a>
-                    <a href="#main4-id">Franchising</a>
-                    <a href="#main66-id">Seminars</a>
-                    <a href="#main7-id">Vision & Mission</a>
+                    <a href="#Franchising">Franchising</a>
+                    <a href="#Seminars">Seminars</a>
+                    <a href="#Vision-&-Mission">Vision & Mission</a>
                 </div>
                 <button id="button1" onclick="window.location.href='https://www.facebook.com/profile.php?id=100083774568391'">Inquire Now</button>
+                <button class="open-btn" onclick="toggleSidebar()" id="invisible">
+                    <span class="charm--menu-hamburger"></span>
+                </button>
             </div>
         </div>
     </header>
-    <div class="main1" id="main1-id">
+    <div class="main1" id="Home">
         <div class="main1-content">
             <h1>Be <span>one</span> of our <span>Franchisee!</span></h1>
             <p>Join the OneTime family and embark on an exciting journey in the food cart industry. 
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="main4" id="main4-id">
+    <div class="main4" id="Franchising">
         <div class="main4-content">
             <div class="main4-content-left">
                 <div class="main4-content-left-text1">
@@ -144,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="main6" id="main6-id">
+    <div class="main6" id="About-Us">
         <div class="main6-content">
             <div class="main6-content-top">
                 <div class="main6-content-top1">
@@ -169,7 +169,7 @@
             </div>
         </div>
     </div>
-    <div class="main66" id="main66-id">
+    <div class="main66" id="Seminars">
         <div class="main66-content">
             <div class="main66-content-top">
                 <h1 style="color: #29176d; font-weight: bold; font-size: clamp(2rem, 3vw, 4rem); margin: 3rem 0rem;">Seminars</h1>
@@ -180,7 +180,7 @@
             </div>
         </div>
     </div>
-    <div class="main7" id="main7-id">
+    <div class="main7" id="Vision-&-Mission">
         <div class="main7-content">
             <div class="main7-content-top">
                 <h1 style="margin-top: 5rem;">Vision <span>&</span> Mission</h1>
@@ -252,7 +252,7 @@
         "--scroll-padding",
         navigationHeight + "px"
         );
-    </script>
 
+    </script>
 </body>
 </html>
